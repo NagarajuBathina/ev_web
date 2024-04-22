@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Rezero</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Cassi Photo Studio HTML Template">
+	<meta name="keywords" content="photo, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/elegant-icons.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		.page-top-warp{
+			/* background: rgb(73, 73, 73); */
+			padding: 0px 20px;
+			flex-direction: column;
+			align-items: flex-start;
+			background-size:cover;
+		}
+		
+		.page-top-warp h5{
+			color: #fff;
+		} 
+		.content-div {
+			background-color: #F6F9FB;
+			padding: 30px 40px;
+		}
+		.specification-heading{
+			display: flex;justify-content: flex-end;gap: 80px;text-align: center;padding-right: 30px;
+		}
+		.features-div{
+			display: flex;
+			justify-content: space-between;
+			/* border-bottom: solid 1px black; */
+			padding: 30px 0px;
+		}
+		.features-div .sub-div1{
+			flex: 2;
+			display: flex;
+			gap: 15px;
+		}
+		.features-div .sub-div1 img{
+			height: 40px;width: 40px;
+		}
+		.features-div .sub-div2{
+			display: flex;
+			flex: 1;
+			justify-content: space-around;
+			align-items: center;
+			text-align: center;
+			gap: 15px;
+		}
+		.features-div .sub-div2 .low-varient-feature{
+			color: #06907E;
+		}
+		.features-div .sub-div2 .top-varient-feature{
+			color: #41515C;
+		}
+
+		.features-div .sub-div1 .specification{
+			color: #181E22;
+		}
+
+
+		#menu-canvas-show {
+		display: flex;align-items: center;gap: 10px;
+	}
+	#menu-canvas-show button{
+		background-color: transparent;
+				color:lightgrey;
+				border: solid 1px white;
+				font-weight: 600;
+	}
+	.page-top-warp{
+		background-size: 100% 110%;background-position: contain;
+	}
+
+	.specification-heading{
+			display: flex;justify-content: flex-end;gap: 80px;text-align: center;padding-right: 30px;
+		}
+
+	@media (max-width:480px){
+		.page-top-warp{
+			background-size: 100% 60%;background-position: contain;
+			display: flex;
+			justify-content: start;
+		}
+		.page-top-warp h2{
+			font-size: 25px;
+			padding-top: 100px;
+		}
+		.page-top-warp h5{
+			font-size: 15px;
+		}
+		.content-div{
+			margin-top: -200px;
+		}
+		.content-div h2{
+			font-size: 25px;
+		}
+		.content-div .specification-heading{
+			gap: 10px;
+			padding-right: 0px;
+		}
+		.content-div .specification-heading h2{
+			padding-top: 15px;
+			font-size: 20px;
+		}
+		.content-div .features-div .sub-div1 img{
+			height: 20px;width: 20px;
+		}
+		.content-div .features-div .sub-div1 h3{
+			font-size: 15px;
+		}
+		.content-div .features-div .sub-div2 h3{
+			font-size: 15px;
+		}
+
+	}
+	</style>
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Offcanvas Menu Section -->
+	<div class="offcanvas-menu-wrapper">
+		<div class="menu-header">
+			<a href="./index.html" class="site-logo">
+				<img src="img/REZERO logo-white.png" alt="" style="width: 150px;height: 40px;">
+			</a>
+			<div class="menu-switch" id="menu-canvas-close">
+				<i class="icon_close"></i>
+			</div>
+		</div>
+		<ul class="main-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="blog.html" class="active">Specifications</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class="menu-footer">
+			<div class="footer-social">
+				<a href=" https://twitter.com/RezeroAutomotiv?t=3A_2ROUhFinQObv36_L7bw&s=09" target="_blank">Twitter</a>
+				<a href=" https://instagram.com/rezero_automotive?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D
+				" target="_blank">Instagram</a>
+				<a href=" https://www.linkedin.com/company/rezero-automotive-private-limited/" target="_blank">LinkedIn</a>
+				<a href="https://www.youtube.com/@RezeroAutomotivePvtLtd" target="_blank">Youtube</a>
+			</div>
+			<!-- <div class="copyright"><p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  </p></div> -->
+		</div>
+	</div>
+	<!-- Offcanvas Menu Section end -->
+	
+	<!-- Header section -->
+	<header class="header-section">
+		<a href="./index.html" class="site-logo">
+			<img src="img/REZERO logo-white.png" alt="" style="width: 150px;height: 40px;">
+		</a>
+		<div class="menu-switch" id="menu-canvas-show">
+			<a href="./index.html"><button>Home</button></a>
+			<i class="icon_menu"></i>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+	<section class="blog-section">
+		
+
+			<div class="page-top-warp set-bg" data-setbg="img/bike1.png">
+				<h2>Introducing our vision  for the Future</h2>
+				<h5>Model Name: MBot V1</h5>
+			</div>
+
+			<div class="content-div">
+				<h2 style="color: #181E22;">Go From Best.</h2>
+				<h2 style="color: #181E22;">To Unbeatable.</h2>
+
+				<div class="specification-heading">
+					<h2 style="color: #41515C;">Top <br><u>Varient</h2></u>
+					<h2 style="color: #06907E;">Low <br><u> Varient</h2></u>
+				</div>
+
+
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/speeds.svg" alt="">
+						<h3 class="specification">Top Speed</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">45Kmph</h3>
+						<h3 class="low-varient-feature">25kmph</h3>
+					</div>
+				</div>
+				<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Battery.svg" alt="">
+						<h3 class="specification">Battery</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">Li-ion 20.8 Ah</h3>
+						<h3 class="low-varient-feature">Li-ion 20.8 Ah</h3>
+					</div>
+				</div>
+<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/ranges.svg" alt="">
+						<h3 class="specification">Range</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">40–55 kms</h3>
+						<h3 class="low-varient-feature">40–55 kms</h3>
+					</div>
+				</div>
+				<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Motor power.svg" alt="">
+						<h3 class="specification">Motor Power</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">500W</h3>
+						<h3 class="low-varient-feature">250W</h3>
+					</div>
+				</div>
+				<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Front brakes.svg" alt="">
+						<h3 class="specification">Front Brake</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">Disc</h3>
+						<h3 class="low-varient-feature">Disc</h3>
+					</div>
+				</div>
+				<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Rear brakes.svg" alt="">
+						<h3 class="specification">Rear Brake</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">Disc</h3>
+						<h3 class="low-varient-feature">Disc</h3>
+					</div>
+				</div>
+				<hr>
+				
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Console.svg" alt="">
+						<h3 class="specification">Console</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">Digital</h3>
+						<h3 class="low-varient-feature">Digital</h3>
+					</div>
+				</div>
+				<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Body type.svg" alt="">
+						<h3 class="specification">Body Type</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">Aluminum Alloy</h3>
+						<h3 class="low-varient-feature">Aluminum Alloy</h3>
+					</div>
+				</div>
+				<hr>
+				<div class="features-div">
+					<div class="sub-div1">
+						<img src="./img/specification-icons/Motor type.svg" alt="">
+						<h3 class="specification">Motor Type</h3></div>
+					<div class="sub-div2">
+						<h3 class="top-varient-feature">BLDC Hub Motor</h3>
+						<h3 class="low-varient-feature">BLDC Hub Motor</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="footer-social">
+			<a href=" https://twitter.com/RezeroAutomotiv?t=3A_2ROUhFinQObv36_L7bw&s=09" target="_blank">Twitter</a>
+			<a href=" https://instagram.com/rezero_automotive?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D
+			" target="_blank">Instagram</a>
+			<a href=" https://www.linkedin.com/company/rezero-automotive-private-limited/" target="_blank">LinkedIn</a>
+			<a href="https://www.youtube.com/@RezeroAutomotivePvtLtd" target="_blank">Youtube</a>
+		</div>
+		<!-- <div class="copyright"><p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  </p></div> -->
+	</footer>
+	<!-- Footer section end -->
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

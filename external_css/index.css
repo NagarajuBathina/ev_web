@@ -1,0 +1,248 @@
+.bike-animation{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.bike-animation .img1{
+    background-image: url(../img/bike4.png);
+    background-repeat: no-repeat;   
+    background-size: 500px;
+    width: 60%;
+    height: 100%;
+    rotate: 20deg;
+    background-color:transparent;
+    background-position-x: 50px;
+    background-position-y: -20px;
+    transition:width 2s;
+}
+
+.text{
+    width: 10%;
+}
+.text h2{
+    color: lightgray;
+}
+.text button{
+    background-color: transparent;
+    color:lightgrey;
+    border: solid 1px white;
+}
+
+.bike-animation .img2:not(.no-hover){
+    background-image: url(../img/bike3.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 30%;
+    height: 100%;
+    background-position: 100px 150px;
+    background-color: transparent;
+    opacity: 0.5; 
+    transition:width 2s;
+}
+
+.last-div{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    margin-top: 0px;
+}
+.last-div img{
+    height: 330px;
+    width: 30%;
+}
+
+.last-div .img1,
+.last-div .img3 {
+    position: absolute;
+    opacity: 0.3;
+    transition: left 2s, right 2s;
+    z-index: 0;
+}
+
+.last-div .img1 {
+    left: 183px;
+}
+
+.last-div .img3 {
+    right: 210px;
+}
+
+.last-div .img2 {
+    position: relative;
+    left: -10px;
+    z-index: 1; 
+    top: 8px;
+}
+
+.last-div:hover .img1 {
+    left: 10px;
+}
+
+.last-div:hover .img3 {
+    right: 10px;
+}
+
+    
+.button-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.button-div button{
+    padding: 3px 15px;
+    margin-right: 15px;
+    background-color: transparent;
+    color:lightgrey;
+    border: solid 1px white;
+    border-radius: 15px;
+}
+
+.button-div .button1:hover{
+    background-color: #800000;
+}
+.button-div .button2:hover{
+    background-color:goldenrod;
+    color: black;
+}
+.button-div .button3:hover{
+    background-color:gray;
+}
+
+.mobile-view-div{
+    display: none;
+}
+
+
+
+@media (max-width:480px){
+    .bike-animation{
+        display: none;
+    }
+    .bike-animation .img1{
+        display:none;
+    }
+    .bike-animation .img2:not(.no-hover){
+        display:none;
+    }
+    .text{
+        display:none;
+    }
+    .specifications-div img{
+        display: none;
+    }
+    .specifications-div{
+        background-image: url(../img/specifications-1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-position: 50% 100% ;
+    }
+    .mobile-view-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+        padding: 10px 0px 0px 0px;
+        gap: 10px;
+    }
+    .mobile-view-div div{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-view-div div img{
+        height: 150px;
+        width: 150px;
+        opacity: 0.5;
+    }
+    .mobile-view-div #img1:hover img{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .mobile-view-div #img2:hover img{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .mobile-view-div #img3:hover img{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    .last-div{
+        display: none;
+    }
+    .button-div{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:801px){
+            .bike-animation .img1{
+                 background-size: 400px;
+                 background-position: 20px -12px;
+             }
+             .bike-animation .img2.img2:not(.no-hover){
+                background-size: 210px;
+                background-position: 10px 50px;
+            }
+            .text h2{
+                font-size: 22px;
+             }
+             .text button{
+                 font-size: 11px;
+             }
+             .last-div{
+                margin-top: 0px;
+             }
+            .last-div img{
+                 height:290px;
+             }
+             .last-div .img1 {
+                left: 115px;
+            }
+             .last-div .img3 {
+                 right: 137px;
+             }
+             .mobile-view-div{
+                display: none;
+            }
+}
+
+@media (max-width:1025px){
+            .last-div img{
+                 height:300px;
+             }
+             .last-div .img1 {
+                left: 140px;
+            }
+             .last-div .img3 {
+                 right: 165px;
+             }
+             .mobile-view-div{
+                display: none;
+            }
+}
+
+
+@media (max-width:1281px){
+    .last-div img{
+        height:300px;
+    }
+    .last-div .img1 {
+       left: 135px;
+   }
+    .last-div .img3 {
+        right: 160px;
+    }
+    .mobile-view-div{
+        display: none;
+    }
+    .last-div{
+        margin-top: -140px;
+    }
+} 
